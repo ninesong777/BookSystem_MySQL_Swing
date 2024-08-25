@@ -1,0 +1,227 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Book Type"
+			"$sizePolicy": 1
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/images/booklogo.png" )
+			"font": new java.awt.Font( "Segoe UI", 0, 12 )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "编号" )
+						add( "类型" )
+						add( "简介" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"font": new java.awt.Font( "华文行楷", 0, 15 )
+					"background": new java.awt.Color( 186, 204, 217, 255 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 35
+				"width": 445
+				"height": 155
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "图书类别查询"
+				"font": new java.awt.Font( "楷体", 0, 16 )
+				"background": new java.awt.Color( 255, 242, 226, 255 )
+				"toolTipText": "type inquire"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 5
+				"width": 105
+				"height": 22
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookTypeNameTxt"
+				"font": new java.awt.Font( "华文行楷", 0, 15 )
+				"background": new java.awt.Color( 196, 203, 207, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 5
+				"width": 210
+				"height": 27
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+				"background": new java.awt.Color( 220, 226, 241, 255 )
+				"toolTipText": "inquire"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/inquirelogo2.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 330
+				"y": 5
+				"width": 100
+				"height": 30
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "--Operation--" )
+				"background": new java.awt.Color( 186, 204, 217, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "编号"
+					"font": new java.awt.Font( "楷体", 0, 18 )
+					"toolTipText": "number"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 40
+					"width": 40
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTxt"
+					"editable": false
+					"font": new java.awt.Font( "默陌月芽体", 0, 14 )
+					"background": new java.awt.Color( 196, 203, 207, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 35
+					"width": 75
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "图书类别名称"
+					"font": new java.awt.Font( "楷体", 0, 18 )
+					"toolTipText": "type name"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 170
+					"y": 40
+					"width": 110
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameTxt"
+					"font": new java.awt.Font( "默陌月芽体", 0, 14 )
+					"background": new java.awt.Color( 196, 203, 207, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 285
+					"y": 35
+					"width": 120
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "简介"
+					"font": new java.awt.Font( "楷体", 0, 18 )
+					"toolTipText": "description"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 85
+					"width": 37
+					"height": 25
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "descTxt"
+						"lineWrap": true
+						"font": new java.awt.Font( "华文行楷", 0, 15 )
+						"background": new java.awt.Color( 196, 203, 207, 255 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 75
+					"width": 340
+					"height": 110
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "修改"
+					"background": new java.awt.Color( 220, 226, 241, 255 )
+					"font": new java.awt.Font( "宋体", 0, 20 )
+					"toolTipText": "modify"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 185
+					"y": 200
+					"width": 85
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "删除"
+					"background": new java.awt.Color( 220, 226, 241, 255 )
+					"font": new java.awt.Font( "宋体", 0, 20 )
+					"toolTipText": "delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 310
+					"y": 200
+					"width": 90
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "添加"
+					"background": new java.awt.Color( 220, 226, 241, 255 )
+					"font": new java.awt.Font( "宋体", 0, 20 )
+					"toolTipText": "add"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 200
+					"width": 85
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/descriptionlogo.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 115
+					"width": 37
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/dog.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 385
+					"y": 235
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/cat.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 240
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/bird (2).png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 415
+					"y": 35
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 190
+				"height": 295
+				"width": 460
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 460, 515 )
+		} )
+	}
+}

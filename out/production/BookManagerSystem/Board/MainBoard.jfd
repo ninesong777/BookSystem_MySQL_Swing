@@ -1,0 +1,439 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Book Manager System"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/images/booklogo.png" )
+			"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			"background": new java.awt.Color( 204, 204, 255, 255 )
+			"$sizePolicy": 1
+			"defaultCloseOperation": 0
+			"foreground": new java.awt.Color( 153, 153, 255, 255 )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "Panda" )
+				"background": new java.awt.Color( 226, 226, 241, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "书名"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "bookname"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 45
+					"width": 40
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "bookNameTXT"
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 130
+					"y": 40
+					"width": 110
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "作者"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "author"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 270
+					"y": 45
+					"width": 40
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "authorTXT"
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 315
+					"y": 40
+					"width": 100
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "图书类别"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "type"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 430
+					"y": 45
+					"width": 70
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "booktypeCB"
+					"font": new java.awt.Font( "默陌月芽体", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 510
+					"y": 40
+					"width": 95
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "查询"
+					"background": new java.awt.Color( 204, 204, 255, 255 )
+					"font": new java.awt.Font( "默陌月芽体", 2, 16 )
+					"toolTipText": "inquire"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/inquirelogo.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 645
+					"y": 30
+					"width": 105
+					"height": 38
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/panda.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 20
+					"y": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 830
+				"height": 110
+				"x": 0
+				"y": 0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"font": new java.awt.Font( "默陌月芽体", 2, 16 )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "编号" )
+						add( "书名" )
+						add( "作者" )
+						add( "作者性别" )
+						add( "图书类别" )
+						add( "简介" )
+						add( "价格" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"background": new java.awt.Color( 220, 226, 241, 255 )
+					"selectionForeground": new java.awt.Color( 0, 0, 153, 255 )
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 820
+				"height": 180
+				"x": 0
+				"y": 110
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel2"
+				"background": new java.awt.Color( 220, 226, 241, 255 )
+				"border": new javax.swing.border.TitledBorder( "Book" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "编号"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "number"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 40
+					"y": 30
+					"width": 40
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTXT"
+					"editable": false
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+					"font": new java.awt.Font( "默陌月芽体", 0, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 25
+					"width": 100
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "书名"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "bookname"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 280
+					"y": 30
+					"width": 40
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "BookNameTXT"
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 320
+					"y": 25
+					"width": 130
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "价格"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "price"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 545
+					"y": 30
+					"width": 40
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "priceTXT"
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 585
+					"y": 25
+					"width": 140
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "作者"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "author"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 40
+					"y": 80
+					"width": 37
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "bookauthorTXT"
+					"font": new java.awt.Font( "华文行楷", 0, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 75
+					"width": 100
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "作者性别"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "sex"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 270
+					"y": 80
+					"width": 70
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "man"
+					"text": "男"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					"font": new java.awt.Font( "楷体", 2, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+					"toolTipText": "male"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 355
+					"y": 80
+					"width": 40
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "woman"
+					"text": "女"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					"font": new java.awt.Font( "楷体", 2, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+					"toolTipText": "female"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 400
+					"y": 80
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "图书类别"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "type"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 525
+					"y": 75
+					"width": 74
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "typeCB"
+					"font": new java.awt.Font( "默陌月芽体", 2, 14 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 600
+					"y": 70
+					"width": 115
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "简介"
+					"font": new java.awt.Font( "楷体", 2, 16 )
+					"toolTipText": "description"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 160
+					"width": 35
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "bookDescTXT"
+						"lineWrap": true
+						"background": new java.awt.Color( 220, 230, 241, 255 )
+						"font": new java.awt.Font( "华文行楷", 0, 14 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 120
+					"y": 130
+					"width": 605
+					"height": 150
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "updateButton"
+					"text": "修改"
+					"font": new java.awt.Font( "宋体", 0, 16 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+					"toolTipText": "modify"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updateButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 205
+					"y": 300
+					"width": 135
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "delButton"
+					"text": "删除"
+					"font": new java.awt.Font( "宋体", 0, 16 )
+					"background": new java.awt.Color( 220, 234, 241, 255 )
+					"toolTipText": "delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 135
+					"height": 30
+					"x": 470
+					"y": 300
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/descriptionlogo2.png" )
+					"background": new java.awt.Color( 220, 226, 241, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 55
+					"y": 185
+					"width": 55
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/church.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 730
+					"y": 290
+					"height": 110
+					"width": 110
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/tower.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": -5
+					"y": 295
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 290
+				"height": 390
+				"width": 820
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"background": new java.awt.Color( 220, 226, 241, 255 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "图书类别操作"
+					"font": new java.awt.Font( "微软雅黑", 0, 12 )
+					"background": new java.awt.Color( 227, 237, 205, 255 )
+					"toolTipText": "operation"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "图书类别管理"
+						"toolTipText": "classification"
+						"font": new java.awt.Font( "微软雅黑", 0, 12 )
+						"background": new java.awt.Color( 227, 237, 205, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "安全退出"
+						"font": new java.awt.Font( "微软雅黑", 0, 12 )
+						"background": new java.awt.Color( 227, 237, 205, 255 )
+						"toolTipText": "exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu5"
+					"text": "图书管理"
+					"font": new java.awt.Font( "微软雅黑", 0, 12 )
+					"background": new java.awt.Color( 227, 237, 205, 255 )
+					"toolTipText": "manage"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "图书添加"
+						"background": new java.awt.Color( 227, 237, 205, 255 )
+						"font": new java.awt.Font( "微软雅黑", 0, 12 )
+						"toolTipText": "addbook"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "关于"
+					"font": new java.awt.Font( "微软雅黑", 0, 12 )
+					"background": new java.awt.Color( 227, 237, 205, 255 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "开发者信息"
+						"font": new java.awt.Font( "微软雅黑", 0, 12 )
+						"background": new java.awt.Color( 227, 237, 205, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 15 )
+			"size": new java.awt.Dimension( 830, 735 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 766 )
+		} )
+	}
+}

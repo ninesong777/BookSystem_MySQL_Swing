@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="BookManager_jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/BookManager-master/out/artifacts/BookManager_jar/mysql-connector-java-8.0.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/BookManager-master/out/artifacts/BookManager_jar/BookManager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jdbc">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/BookManager-master/jdbc" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/BookManager-master/jdbc" recursive="false" />
+  </library>
+</component>

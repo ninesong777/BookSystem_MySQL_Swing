@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2fa6d164-318b-4502-a07b-356dd490a156" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2Qdwqzjz78WedNe3AGMPdIbQJAX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Enter.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "255",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/大一下/Java程序设计/Java期末项目_沈海鹏/Java大作业源代码_8008123144_沈海鹏_2305班",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Enter.executor": "Run"
+  }
+}]]></component>
+  <component name="RunManager" selected="应用程序.Enter">
+    <configuration name="Enter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board.Enter" />
+      <module name="BookManagerSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Enter (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board.Enter" />
+      <module name="BookManagerSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Enter (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board.Enter" />
+      <module name="BookManagerSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Enter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Board.Enter" />
+      <module name="BookManagerSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Board.BookAddBoard" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Enter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2fa6d164-318b-4502-a07b-356dd490a156" name="更改" comment="" />
+      <created>1685696962036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685696962036</updated>
+      <workItem from="1685696963593" duration="4915000" />
+      <workItem from="1685701922514" duration="4909000" />
+      <workItem from="1685755183345" duration="7691000" />
+      <workItem from="1685790574053" duration="7491000" />
+      <workItem from="1685798869190" duration="2091000" />
+      <workItem from="1685801007510" duration="3818000" />
+      <workItem from="1685808483205" duration="117000" />
+      <workItem from="1685808788122" duration="99000" />
+      <workItem from="1685838189565" duration="758000" />
+      <workItem from="1685889174161" duration="704000" />
+      <workItem from="1685890274819" duration="40000" />
+      <workItem from="1685891878455" duration="43000" />
+      <workItem from="1685971660582" duration="3547000" />
+      <workItem from="1685980531074" duration="498000" />
+      <workItem from="1685981070351" duration="43000" />
+      <workItem from="1685981201882" duration="54000" />
+      <workItem from="1686010054339" duration="13643000" />
+      <workItem from="1686107880990" duration="2109000" />
+      <workItem from="1686126327765" duration="139000" />
+      <workItem from="1686126478774" duration="12943000" />
+      <workItem from="1686144145406" duration="220000" />
+      <workItem from="1686302902467" duration="1856000" />
+      <workItem from="1686374883711" duration="5807000" />
+      <workItem from="1686390657579" duration="2809000" />
+      <workItem from="1686393513580" duration="465000" />
+      <workItem from="1686411903368" duration="1639000" />
+      <workItem from="1686452970635" duration="2476000" />
+      <workItem from="1686530236894" duration="7240000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
